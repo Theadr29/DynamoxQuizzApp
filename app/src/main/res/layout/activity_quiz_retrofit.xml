@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".QuizRetrofit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+
+
+        <!--                <EditText-->
+        <!--                    android:id="@+id/editTextName"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:hint="Digite seu nome ou apelido"-->
+        <!--                    android:imeOptions="actionDone"-->
+        <!--                    android:minHeight="48dp" />-->
+
+
+        <Button
+            android:id="@+id/btnStartQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:text="Iniciar Quiz"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimary" />
+
+
+
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Pergunta:"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+
+            android:visibility="gone" /> <!-- Começa invisível -->
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnNextQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Próxima Pergunta"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pontuação: 0"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+        <Button
+            android:id="@+id/btnRestartQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar Quiz"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+
